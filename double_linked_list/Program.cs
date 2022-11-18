@@ -112,6 +112,11 @@ namespace double_linked_list
                     START.prev = null;
                 return true;
             }
+            /*if the to be deleted is between the list the the following lines of is executed */
+            previous.next = current.next;
+            current.next.prev = previous;
+            return true;
+        
         }
     }
 }
