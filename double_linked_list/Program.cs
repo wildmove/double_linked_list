@@ -92,5 +92,13 @@ namespace double_linked_list
             }
             return (current != null);
         }
+        public bool delNode(int rollNo)
+        {
+            Node previous, current;
+            previous = current = null;
+            if(Search(rollNo, ref previous, ref current) == false)
+                return false;
+            
+        }
     }
 }
