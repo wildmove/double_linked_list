@@ -144,6 +144,14 @@ namespace double_linked_list
             if (listEmpty())
                 Console.WriteLine("\nList is empty");
             Console.WriteLine("\nRecord in the descending order of" + "Roll number are:\n");
+            //membawa currentNode ke node paling belakang
+            Node currentNode;
+            currentNode = START;
+            while (currentNode.next != null)
+            {
+                currentNode = currentNode.next;
+            }
+
             
 
         }
